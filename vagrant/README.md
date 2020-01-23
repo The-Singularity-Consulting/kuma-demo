@@ -319,6 +319,12 @@ You can visit the [Prometheus dashboard](http://192.168.33.80:9090/) to query th
 This is what the query on `envoy_http_downstream_cx_tx_bytes_total` will return:
 ![Prometheus Kuma](https://i.imgur.com/XaUBTlk.png "Prometheus Dashboard on Kuma")
 
+### 18. Visualize metrics via Grafana dashboard
+
+Visit the [Grafana dashboard](http://192.168.33.80:3000) to see the L4 metrics with the default dashboard. To login to Grafana use `admin` login and `admin` password.
+
+![Grafana dashboard](https://i.imgur.com/nAVPQmn.png "Grafana Dashboard for L4 traffic")
+
 ### 18. Visualize mesh with Kuma GUI
 
 Kuma ships with an internal GUI that will help you visualize the mesh and its policies in an intuitive format. It can be found on port `:5683` on the control-plane machine. Since our Kuma control-plane machine's IP is `192.168.33.10`, navigate to [http://192.168.33.10:5683/](http://192.168.33.10:5683/) to use Kuma's GUI.
